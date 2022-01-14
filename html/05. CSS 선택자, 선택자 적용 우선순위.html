@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>CSS 선택자, 선택자 적용 우선순위</title>
-    <link rel="stylesheet" href="style2.css">
+    <style>
+        /*
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        p.center {
+            text-align: right;
+            color: blue;
+        }
+
+        #center {
+            text-align: left;
+            color: green;
+        }
+        */
+        h1,
+        p {
+            color: red;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p b {
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     <p>내는 목숨이 가지에 별과 꽃이 생의 끓는 과실이 더운지라 것이다.</p>
     <p class="center">우리 우리는 가슴이 같이, 위하여서, 보라.</p>
@@ -14,4 +43,5 @@
     <h1>별 가슴속에 청춘이 슬퍼하는 버리었습니다.</h1>
     <p>불러 별 이런 이름자를 있습니다.<b>굵은 글씨</b></p>
 </body>
+
 </html>
