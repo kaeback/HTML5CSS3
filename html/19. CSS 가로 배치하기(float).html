@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 가로 배치하기(float)</title>
+    <style>
+        .parent {
+            border: 5px solid red;
+            width: 600px;
+            /* height: 200px; */
+            overflow: hidden; /* 자식 요소의 높이에 따라 부모의 높이도 자동으로 맞춰준다. */
+        }
+        .child {
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            display: block;
+            /* float: right; */
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <span class="child"></span>
+    </div>
+</body>
+</html>
