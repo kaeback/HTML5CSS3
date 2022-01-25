@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 함수</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(".show-btn").click(function(){
+                $("div").show();
+            });
+        });
+        $(function(){
+            $(".hide-btn").click(function(){
+                $("div").hide();
+            });
+        });
+        $(function(){
+            $(".toggle-btn").mouseenter(function(){
+                $("div").show();
+            });
+        })
+        $(function(){
+            $(".toggle-btn").mouseleave(function(){
+                $("div").hide();
+            });
+        })
+    </script>
+    <style>
+        a {
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            background-color: #ddd;
+            width: 200px;
+            text-align: center;
+            padding: 5px;
+        }
+        div {
+            background-color: dodgerblue;
+            height: 200px;
+            width: 230px;
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a class="show-btn" href="#none">보이기</a>
+    <a class="hide-btn" href="#none">감추기</a>
+    <a class="toggle-btn" href="#none">보이기/감추기</a>
+    <div>Box</div>
+</body>
+</html>
