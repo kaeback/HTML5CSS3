@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>폼 태그</title>
+</head>
+
+<body>
+    <!--
+		<form> 태그 속성
+		method : 사용자가 입력한 내용을 서버로 전송하는 방식 지정
+			get : 주소 표시줄에 사용자가 입력한 내용이 그대로 드러난다. 256 ~ 4096byte 까지의 데이터만 보낼 수 있다.
+			post : 입력 내용의 길이에 제한이 없고 사용자가 입력한 내용이 드러나지 않는다.
+		name : 폼의 이름을 지정한다.
+		action : <form> 태그 안의 내용을 처리해줄 서버 프로그램을 지정
+		target : <action> 태그에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정한다. 
+	-->
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
