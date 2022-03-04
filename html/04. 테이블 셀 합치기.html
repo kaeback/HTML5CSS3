@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 셀 합치기</title>
+  <style type="text/css">
+    table, td, th {
+      border: 1px solid black;
+    }
+
+    th, td {
+      /* padding: 15px; */
+    }
+
+    table {
+      /* border-spacing: 30px; */
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width: 100%;">
+    <caption>Table Title</caption>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Jill</td>
+      <td rowspan="2">Smith</td>
+      <td rowspan="2">50</td>
+      <td>010-1111-2222</td>
+    </tr>
+    <tr>
+      <td>010-1111-3333</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>010-1111-4444</td>
+    </tr>
+  </table>
+</body>
+
+</html>
