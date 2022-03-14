@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>30. 실습하기(네비게이션바)</title>
+    <style>
+        #navi {
+            position: relative;
+            border: 1px solid black;
+            height: 27px;
+            padding: 20px;
+        }
+
+        div .menu {
+            /* border: 1px solid black; */
+            float: left;
+            width: 200px;
+            margin-left: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        div #login {
+            float: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="navi">
+        <div class="menu"><a href="#none">MENU1</a></div>
+        <div class="menu"><a href="#none">MENU2</a></div>
+        <div class="menu"><a href="#none">MENU3</a></div>
+        <div class="menu"><a href="#none">MENU4</a></div>
+        <div class="menu" id="login"><a href="#none">Sign in</a></div>
+    </div>
+</body>
+</html>

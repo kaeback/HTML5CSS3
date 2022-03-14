@@ -5,8 +5,13 @@
     <title>CSS 서식속성(목록 스타일)</title>
     <style>
         .menu {
+            /* none : 리스트의 . 을 없앤다. */
             list-style: none;
         }
+        /* 
+            ::after -> 선택한 요소의 마지막에 의사요소 생성
+            ::before -> 선택한 요소의 앞에 의사요소 생성
+        */
         .menu li::before {
             content: '♥ ';
         }

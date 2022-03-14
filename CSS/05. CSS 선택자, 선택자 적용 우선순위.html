@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>CSS 선택자, 선택자 적용 우선순위</title>
     <style>
-        /*
+        /*         
         p {
             text-align: center;
             color: red;
         }
-
+        
         p.center {
             text-align: right;
             color: blue;
@@ -21,13 +21,14 @@
             color: green;
         }
         */
-        h1,
-        p {
+        /* 그룹 선택자 : 여러 선택자를 한번에 지정 */
+        h1, p {
             color: red;
             text-align: center;
             font-size: 30px;
         }
-
+        
+        /* 자손(자식, 손자 등 모두 포함) 선택자에 지정 */
         p b {
             color: blue;
         }

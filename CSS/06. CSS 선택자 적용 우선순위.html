@@ -6,7 +6,7 @@
     <title>CSS 선택자 적용 우선순위</title>
     <style>
         h1 {
-            color: red !important;
+            color: red /*!important*/;
         }
 
         .text {
@@ -22,8 +22,8 @@
 <body>
     <h1>CSS 적용 우선순위 - 태그</h1>
     <h1 class="text">CSS 적용 우선순위 - 클래스</h1>
-    <h1 id="text" style="color: gold;">CSS 적용 우선순위 - 아이디</h1>
-    <h1>CSS 적용 우선순위 - 인라인</h1>
+    <h1 id="text" class="text">CSS 적용 우선순위 - 아이디</h1>
+    <h1 style="color: gold;">CSS 적용 우선순위 - 인라인</h1>
     <h1>CSS 적용 우선순위 - !important</h1>
 </body>
 
